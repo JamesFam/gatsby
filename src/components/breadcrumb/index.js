@@ -11,7 +11,7 @@ const Breadcrumb = ({ breadcrumb }) => {
                 {
                     breadcrumb.map((val) => {
                         return (
-                            <li>
+                            <li key={val.name}>
                                 {val.path && <Link to={val.path}>{val.name}</Link>}
                                 {!val.path && <span>{val.name}</span>}
                             </li>

@@ -9,7 +9,7 @@ const List = ({ listData }) => {
             {
                 listData.map((val) => {
                     return (
-                        <li className={styles.list__item}>
+                        <li key={val.title} className={styles.list__item}>
                             {val.image &&
                                 <div className={styles.list__image}>
                                     <img src={val.image} />
