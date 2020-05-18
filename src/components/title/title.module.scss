@@ -1,0 +1,8 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+.title {
+    font-size: 2rem;
+    color: $color1;
+    border-bottom: 1px solid $color1;
+    padding-bottom: 12px;
+}

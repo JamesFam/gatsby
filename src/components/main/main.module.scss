@@ -1,0 +1,40 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+body {
+    @include sp {
+        min-width: 320px;
+    }
+}
+.content {
+    max-width: $baseWidth1;
+    padding: 0 15px;
+    margin: 50px auto 80px;
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+        display: block;
+        margin: 30px auto 40px;
+    }
+}
+.main {
+    width: 800px;
+    margin-right: 15px;
+    @include sp {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.main2 {
+    max-width: $baseWidth1;
+    padding: 0 15px;
+    margin: 50px auto 80px;
+    @include sp {
+        margin: 30px auto 40px;
+    }
+}
+.sidebar {
+    width: 220px;
+    @include sp {
+        margin: 30px auto 0;
+    }
+}

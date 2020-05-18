@@ -1,0 +1,20 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+.heading {
+    border-bottom: 1px solid #ccc;
+    &__inner {
+        max-width: $baseWidth1;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        font-size: 2.2rem;
+        color: $color1;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        @include sp {
+            font-size: 2rem;
+            min-height: 70px;
+        }
+    }
+}

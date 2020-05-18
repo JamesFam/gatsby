@@ -1,0 +1,40 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    @include sp {
+        display: block;
+    }
+    &__item {
+        width: 31.25%;
+        margin: 0 0 40px 3.125%;
+        &:nth-child(3n+1) {
+            margin-left: 0;
+        }
+        @include sp {
+            width: 100%;
+            margin: 0 0 50px 0;
+        }
+    }
+    &__image {
+        margin-bottom: 15px;
+        text-align: center;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__info {
+        h3 {
+            font-size: 1.8rem;
+            color: $color1;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 1.6rem;
+            color: $color1;
+            line-height: 1.5;
+        }
+    }
+}

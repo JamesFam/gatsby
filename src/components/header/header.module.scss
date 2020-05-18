@@ -1,0 +1,69 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+.header {
+    height: 80px;
+    @include sp {
+        height: 60px;
+    }
+    &__fixed {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        @include sp {
+            height: 60px;
+        }
+    }
+    &__inner {
+        max-width: $baseWidth1;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        @include sp {
+            img {
+                max-width: 120px;
+            }
+        }
+    }
+    &__navi {
+        ul {
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                @include sp {
+                    margin-left: 15px;
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $color1;
+            display: inline-block;
+            padding: 10px;
+            border-bottom: 1px solid transparent;
+            &:hover, &.active {
+                border-bottom: 1px solid $color1;
+                opacity: 1;
+            }
+        }
+        @include sp {
+            a {
+                padding: 7px 2px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

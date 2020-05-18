@@ -1,0 +1,48 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+.sidebar {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    overflow: hidden;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    &__head {
+        font-size: 1.6rem;
+        color: $color1;
+        padding: 12px 10px;
+        background-color: #e6e9ed;
+        border-bottom: 1px solid #ccc;
+    }
+    &__body {
+        padding: 10px 9px;
+    }
+    &__list {
+        li {
+            border-top: 1px solid #ccc;
+            &:last-of-type {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+        a {
+            display: block;
+            font-size: 1.5rem;
+            color: $color1;
+            padding: 12px 10px;
+            text-decoration: none;
+        }
+    }
+    &__banner {
+        li {
+            margin-bottom: 10px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

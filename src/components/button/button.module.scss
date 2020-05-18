@@ -1,0 +1,18 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+.button {
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $color1;
+    border: 1px solid #ccc;
+    background-color: #e6e9ed;
+    &:hover {
+        opacity: 1;
+        background-color: #ccc;
+    }
+}

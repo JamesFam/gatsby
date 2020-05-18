@@ -1,0 +1,42 @@
+@import "../../styles/vars";
+@import "../../styles/mixin";
+.breadcrumb {
+    border-bottom: 1px solid #CCC;
+    ul {
+        max-width: $baseWidth1;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 0 auto;
+        li {
+            display: inline-block;
+            &:after {
+                content: "›";
+                font-size: 1.5rem;
+                color: $color1;
+                display: inline-block;
+                margin: 0 9px;
+                @include sp {
+                    font-size: 1.3rem;
+                }
+            }
+            &:last-of-type {
+                &:after {
+                    content: none;
+                }
+            }
+            a, span {
+                font-size: 1.5rem;
+                color: $color1;
+                @include sp {
+                    font-size: 1.3rem;
+                }
+            }
+            a {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "./vars";
+@import "./mixin";
+.info {
+    margin-bottom: 20px;
+}
+.content {
+    margin-top: 50px;
+    h3 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 1.6rem;
+        color: #333;
+        line-height: 1.6;
+        text-align: justify;
+    }
+}
