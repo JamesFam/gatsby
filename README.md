@@ -14,31 +14,37 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+## Prerequisites
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+If you do not have Gatsby Cli installed yet, do it first.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+```text
+npm install --global gatsby-cli
+```
 
-1.  **Start developing.**
+More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
 
-    Navigate into your new site’s directory and start it up.
+## Getting started
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+Install the starter using Gatsby Cli `gatsby new` command.
 
-1.  **Open the source code and start editing!**
+```text
+gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/JamesFam/my-site.git
+```
 
-    Your site is now running at `http://localhost:8000`!
+Go into the newly created directory and run
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```text
+gatsby develop
+```
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+to hot-serve your website on http://localhost:8000 or
+
+```text
+gatsby build
+```
+
+to create static site ready to host (/public).
 
 ## 🧐 What's inside?
 
