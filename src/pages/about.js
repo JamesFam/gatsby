@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 import Main from "../components/main"
 import Breadcrumb from "../components/breadcrumb"
 import Heading from "../components/heading"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Info from "../components/info"
 import styles from "../styles/about.module.scss"
 import image150x150 from "../images/150x150.png"
+import image from "../images/gatsby-astronaut.png"
 
 const AboutPage = () => (
     <Layout>
@@ -63,9 +63,7 @@ const AboutPage = () => (
                 humour, or randomised words which don't look even slightly believable.
                 If you are going to use a passage of Lorem Ipsum, you need to be sure
                 there isn't anything embarrassing hidden in the middle of text.</p>
-                <div style={{ maxWidth: `300px`, margin: `10px 0` }}>
-                    <Image filename="gatsby-astronaut.png" alt="" />
-                </div>
+                <img src={image} alt="" style={{ maxWidth: `300px`, margin: `10px 0` }} />
                 <p>All the Lorem Ipsum generators on the Internet tend to repeat
                 predefined chunks as necessary, making this the first true generator
                 on the Internet. It uses a dictionary of over 200 Latin words,
@@ -73,9 +71,8 @@ const AboutPage = () => (
                 Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
                 therefore always free from repetition, injected humour, or
                 non-characteristic words etc.</p>
-                <div style={{ maxWidth: `300px`, margin: `10px 0` }}>
-                    <Image filename="gatsby-astronaut.png" alt="" />
-                </div>
+                <img src={image} alt="" style={{ maxWidth: `300px`, margin: `10px 0` }} />
+
             </div>
         </Main>
     </Layout>
