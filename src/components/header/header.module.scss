@@ -60,9 +60,74 @@
             }
         }
         @include sp {
-            a {
-                padding: 7px 2px;
-                font-size: 1.3rem;
+            height: 0;
+            overflow: hidden;
+            transition: .25s ease-in-out;
+            position: fixed;
+            width: 100%;
+            top: 60px;
+            left: 0;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            &.isActive {
+                height: calc(100vh - 60px);
+            }
+            ul {
+                width: 100%;
+                text-align: center;
+                li {
+                    display: block;
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
+    }
+    &__icon {
+        display: none;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: $color1;
+            position: absolute;
+            left: 0;
+            transition: .25s ease-in-out;
+            transform: rotate(0deg);
+            transform-origin: left center;
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2) {
+                top: 13px;
+            }
+            &:nth-child(3) {
+                top: 27px;
+            }
+        }
+        @include sp {
+            display: block;
+        }
+        &.isActive {
+            span {
+                &:nth-child(1) {
+                    top: 0;
+                    left: 2px;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    width: 0;
+                }
+                &:nth-child(3) {
+                    top: 21px;
+                    left: 2px;
+                    transform: rotate(-45deg);
+                }
             }
         }
     }
