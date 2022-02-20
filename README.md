@@ -14,7 +14,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## Demo
 
-[my-site](https://jamesfam.github.io/my-site/)
+[my-site](https://jamesfam.github.io/gatsby/)
 
 ## Prerequisites
 
